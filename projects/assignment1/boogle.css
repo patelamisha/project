@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+  }
+
+  .main {
+    border: 1px solid black;
+    height: 125px;
+    background-color: #bcb9b936;
+  }
+
+  .icon-arrow-left {
+    margin-left: auto;
+    font-size: 40px;
+    padding: 11px;
+  }
+
+  .icon-arrow-right {
+    margin-left: auto;
+    font-size: 40px;
+    padding: 11px;
+  }
+
+  .icon-cross {
+    margin-left: auto;
+    font-size: 40px;
+    padding: 11px;
+  }
+
+  .icon-home3 {
+    margin-left: auto;
+    font-size: 40px;
+    padding: 11px;
+  }
+
+.in_field{
+margin-top: -28px;
+width: 865px;
+}
+
+
+  .inputfield {
+    width: 800px;
+    margin-left: 318px;
+  }
+
+
+
+  .search {
+    width: 56px;
+border: 1px solid black;
+float: right;
+border-radius: 19px;
+margin-top: -37px;
+margin-right: 48px;
+padding: 6px 0px 10px 29px;
+}
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+
+  li {
+    float: left;
+    border-right: 2px solid black;
+    font-size: 17px;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+  }
+
+  .containe {
+    margin: 50px;
+    position: center;
+    padding: 10px;
+  }
+
+  .in_field1 {
+    width: 500px;
+    margin: 0px 0px 10px 358px;
+  }
+
+  .btn {
+    text-align: center;
+  }
