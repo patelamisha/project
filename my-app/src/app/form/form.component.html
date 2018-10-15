@@ -1,0 +1,71 @@
+<!--<div class="container">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+  <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+
+    <fieldset class="form-group">
+      <input formControlName="username" placeholder="Username" class="form-control form-control-lg" type="text" >
+    </fieldset>
+
+    <fieldset class="form-group">
+      <input formControlName="email" placeholder="Email" class="form-control form-control-lg" type="text" />
+    </fieldset>
+
+    <fieldset class="form-group">
+      <input formControlName="password" placeholder="Password" class="form-control form-control-lg" type="password" />
+    </fieldset>
+
+    <button class="btn btn-lg btn-primary pull-xs-right" type="submit" >
+      <a [routerLink]="['/form']">Submit</a>
+</button>
+  </form>-->
+<!--Registration Page Starts-->
+<section id="regestration">
+  <div class="container">
+    <div class="row full-height-vh">
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        <div class="card">
+          <div class="card-body">
+            <div class="row d-flex">
+              <div class="col-12 col-sm-12 col-md-12 gradient-deep-orange-orange">
+                <div class="card-block">
+                  <h2 class="card-title">Registration</h2>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 ">
+                <div class="card-block mx-auto">
+                  <form (ngSubmit)="submitForm()" #f="ngForm">
+                    <div class="input-group mb-3">
+                      <label class="input-group-addon">Name</label>
+                      <input type="text" class="form-control" name="fname" id="fname" placeholder="Name" ngModel required>
+
+                    </div>
+                    <div class="input-group mb-3">
+                      <label class="input-group-addon">Email ID</label>
+
+                      <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" ngModel required email>
+                    </div>
+                    <div class="input-group">
+                      <label class="input-group-addon">
+                        Password
+                      </label>
+                      <input type="password" class="form-control" name="inputPass" id="inputPass" placeholder="Password" ngModel required>
+                    </div><br/>
+                    <div class="form-group text-center">
+                      <button type="button" class="btn btn-warning btn-raised" >
+                        <a [routerLink]="['/form']">Submit</a>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Registration Page Ends-->
+{{myForm.value }}
