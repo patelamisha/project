@@ -1,0 +1,30 @@
+<div class="row">
+
+  <div class="col-md-2 filter">
+    <app-filter></app-filter>
+  </div>
+  <div class=" secode col-md-3"*ngFor="let product of products">
+    <div class=" padding-10">
+      <mat-card class="card-container-phone">
+        <mat-card-header>
+          <div md-card-avatar class="example-header-image"></div>
+          <md-card-title>
+            <span class="badge">{{product.id}}</span> <strong>{{product.name}}</strong>
+          </md-card-title>
+        </mat-card-header>
+
+        <img width="220" height="220" class="image-align-center padding-bottom-10" src={{product.src}} />
+
+        <mat-card-actions>
+          <div style="display: flex">
+            <span class="padding-right-5">Quantity: </span>
+            <input type="number" [(ngModel)]="quantity">
+          </div>
+          <h1 class="badge">${{product.price}}</h1>
+          <button (click)="addToCart(product)" class="btn btn-sm btn-primary">Add to Cart</button>
+          <button (click)="clickedProduct(product)" class="btn btn-sm btn-success">Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
